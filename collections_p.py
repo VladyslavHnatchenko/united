@@ -1,20 +1,36 @@
-from collections import OrderedDict
+from list_tuple_dict import Vehicle
 
 
-d = {
-    'banana': 3,
-    'apple': 4,
-    'pear': 1,
-    'orange': 2
-}
+class Car(Vehicle):
+    """The Car class"""
+    def brake(self):
+        """Override brake method"""
+        return "The car class is breaking slowly!"
 
-new_d = OrderedDict(sorted(d.items()))
 
-print(new_d)
+if __name__ == '__main__':
+    car = Car("yellow", 2, 4, "car")
+    print(car.brake())
+    # "The car class is breaking slowly!"
+    print(car.drive())
+    # "I'm driving a yellow car!"
 
-for key in new_d:
-    print(key, new_d[key])
-
+# from collections import OrderedDict
+#
+#
+# d = {
+#     'banana': 3,
+#     'apple': 4,
+#     'pear': 1,
+#     'orange': 2
+# }
+#
+# new_d = OrderedDict(sorted(d.items()))
+#
+# print(new_d)
+#
+# for key in new_d:
+#     print(key, new_d[key])
 
 # from collections import namedtuple
 #
