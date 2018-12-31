@@ -1,20 +1,99 @@
+"""decorators"""
+def my_shiny_new_decorator(function_to_decorate):
+
+    def the_wrapper_around_the_original_function():
+        print("I'm the code that will work before the function is called")
+        function_to_decorate()
+        print("And I'm - the code that is triggered after a function call")
+    return the_wrapper_around_the_original_function
+
+
+def stand_alone_function():
+    print("I'm just a lonely function, you don't dare change me, are you?")
+
+
+"""overloading operators"""
+# import math
+#
+#
+# class Vector2D:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+#     def __repr__(self):
+#         return 'Vector2D({}, {})'.format(self.x, self.y)
+#
+#     def __str__(self):
+#         return '({}, {})'.format(self.x, self.y)
+#
+#     def __add__(self, other):
+#         return Vector2D(self.x + other.x, self.y + other.x)
+#
+#     def __iadd__(self, other):
+#         self.x += other.x
+#         self.y += other.y
+#         return self
+#
+#     def __sub__(self, other):
+#         return Vector2D(self.x - other.x, self.y - other.y)
+#
+#     def __isub__(self, other):
+#         self.x -= other.x
+#         self.y -= other.y
+#         return self
+#
+#     def __abs__(self):
+#         return math.hypot(self.x, self.y)
+#
+#     def __bool__(self):
+#         return self.x != 0 or self.y != 0
+#
+#     def __neg__(self):
+#         return Vector2D(-self.x, -self.y)
+
+# class A:
+#     def __init__(self, name):
+#         self.name = name
+
+# class A:
+#     def go(self):
+#         print('Go, A!')
+#
+#
+# class B(A):
+#     def go(self, name):
+#         print('Go, {}!'.format(name))
+
+"""object oriented programming"""
+# class MyDict(dict):
+#     def get(self, key, default=0):
+#         return dict.get(self, key, default)
+
+# class B:
+#     def __private(self):
+#         print("Private method!")
+
+# class A:
+#     def _private(self):
+#         print("Private method!")
+
 """import/from module"""
-def hello():
-    print("Hello, world!")
-
-
-def fib(n):
-    a = b = 1
-    for i in range(n - 2):
-        a, b = b, a + b
-    return b
-
-
-if __name__ == "__main__":
-    hello()
-    for i in range(10):
-        print(fib(i))
-
+# def hello():
+#     print("Hello, world!")
+#
+#
+# def fib(n):
+#     a = b = 1
+#     for i in range(n - 2):
+#         a, b = b, a + b
+#     return b
+#
+#
+# if __name__ == "__main__":
+#     hello()
+#     for i in range(10):
+#         print(fib(i))
 
 # import math as m
 #
