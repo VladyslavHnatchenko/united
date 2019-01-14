@@ -1,5 +1,34 @@
-"""while"""
+"""for"""
+# multiplication table
+for i in range(1, 10):
+    for j in range(1, 10):
+        print(i * j, end="\t")
+    print("\n")
 
+
+# number = int(input("Enter the number: "))
+# factorial = 1
+# for i in range(1, number + 1):
+#     factorial *= i
+# print("The factorial of the number", number, "is", factorial)
+
+"""while"""
+# number = int(input("Enter the number: "))
+# i = 1
+# factorial = 1
+# while i <= number:
+#     factorial *= i
+#     i += 1
+#
+# print("The factorial of the ", number, "is", factorial)
+
+# choice = "y"
+#
+# while choice.lower() == "y":
+#     print("Hello")
+#     choice = input("To continue, press Y, and to exit any other key: ")
+#
+# print("The program is completed")
 
 """if elif else"""
 # Exchange office - program
