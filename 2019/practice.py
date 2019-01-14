@@ -6,6 +6,7 @@ for i in range(1, 10):
     print("\n")
 
 
+
 # number = int(input("Enter the number: "))
 # factorial = 1
 # for i in range(1, number + 1):
