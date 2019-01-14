@@ -1,11 +1,37 @@
 """for"""
-# multiplication table
-for i in range(1, 10):
-    for j in range(1, 10):
-        print(i * j, end="\t")
-    print("\n")
+print("For exit press Y")
 
+while True:
+    data = input("Enter amount for exchange: ")
+    if data.lower() == "y":
+        break
+    money = int(data)
+    if money < 0:
+        print("The amount should be positive!")
+        continue
+    cache = round(money / 28, 2)
+    print("To be received", cache, "usd")
 
+print("Work currency exchange office is completed")
+
+# # Currency exchange
+# print("For exit press Y")
+#
+# while True:
+#     data = input("Enter amount for exchange: ")
+#     if data.lower() == "y":
+#         break  # exit for loop
+#     money = int(data)
+#     cache = round(money / 28, 2)
+#     print("To be received: ", cache, "dollars")
+#
+# print("Work currency exchange office is completed")
+
+# # multiplication table
+# for i in range(1, 10):
+#     for j in range(1, 10):
+#         print(i * j, end="\t")
+#     print("\n")
 
 # number = int(input("Enter the number: "))
 # factorial = 1
