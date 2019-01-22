@@ -1,0 +1,12 @@
+INFO:root:Informational message
+ERROR:root:An error has happened!
+ERROR:ex:Error!
+Traceback (most recent call last):
+  File "logger_p.py", line 9, in <module>
+    raise RuntimeError
+RuntimeError
+ERROR:ex:Error!
+Traceback (most recent call last):
+  File "C:/Users/vladyslav.hnatchenko/PycharmProjects/united/logger_p.py", line 9, in <module>
+    raise RuntimeError
+RuntimeError

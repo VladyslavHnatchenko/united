@@ -1,9 +1,4 @@
 .idea
-.mypy
-.mypy_cache
 venv
 __pycache__
-*.bin
-*.pem
-*.pdf
-*.log
+.log
